@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Reem+Kufi+Fun:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding:0;
+
+}
+header {
+  background-color: #f7f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Reem Kufi Fun", sans-serif;
+  color: black;
+}
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header ul li {
+  flex-direction: row;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  transition: 0.3s all;
+  font-family: "Lobster", cursive;
+  font-size: 3vh;
+}
+
+header ul li:hover {
+  color: #2176ff;
+}
+
+header ul a li {
+  color: black;
+  margin: 10px;
+}
+.background1 {
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+}
+
+#iniciologo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  gap: 10px;
+}
+
+#iniciologo img {
+  width: 50px;
+  margin: 5px;
+}
+
+.imgcard {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
+.cardparagrafo {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+}
+
+.fundonovo {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.fundonovo a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.fundocards {
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  display: flex;
+  padding: 1em;
+  border-radius: 20px;
+  border: 1px black double;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.bannerfundo {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1587820784436-7a9a0f956db1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1326&q=80");
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: left;
+  justify-content: flex-start;
+  color: white;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 23px;
+  padding: 15px;
+}
+
+.bannerfundo {
+  justify-content: flex-start;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+label {
+  width: 211px;
+  height: 34px;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  margin-left: 10px;
+}
+form input {
+  box-sizing: border-box;
+  width: 326px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
+  border-radius: 25px;
+  transition: all 0.5s;
+  padding-left: 5%;
+  color: rgb(0, 0, 0);
+}
+form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 15px #2176ff;
+}
+button {
+  display: flex;
+  width: 60px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  margin-left: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
+  transition: all 0.5s;
+  padding: 10px;
+  margin: 10px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 15px #2176ff;
+}
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+.valid {
+  display: block;
+  animation: valid 1s forwards;
+}
+.fa-spinner {
+  width: 20px;
+  font-size: large;
+  margin: auto;
+  color: #ff8870;
+  animation: spin 2s infinite;
+}
+#check {
+  display: none;
+  width: 20px;
+  font-size: large;
+  margin: auto;
+  color: green;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes valid {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+.section2 img {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  padding: 15px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  border-radius: 50%;
+  outline: 2px solid rgb(255, 255, 255);
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.icons a img {
+  width: 17px;
+  height: 17px;
+}
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+.icon--github:hover {
+  background-color: #636060;
+  outline-color: #636060;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+
+
+footer p {
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 30px;
+}
+footer p a {
+  color: #2176ff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+.imgAndText {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.text1 {
+  text-align: center;
+  display: block;
+  width: 250px;
+}
+
+.direcao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgsobre {
+  background-image: url("../img/benjamin-child-GWe0dlVD9e0-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  min-width: 230px;
+  height: 230px;
+  justify-content: center;
+  margin: 1em;
+}
+.imgdirecao {
+  background-image: url(../img/sobre.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  min-width: 230px;
+  min-height: 230px;
+  margin: 1em;
+}
+main section div h1 {
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+main section div p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+main section {
+  display: flex;
+}
+.Cursos {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.Cursos a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.fundocards1 {
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  display: flex;
+  padding: 1em;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.textcursos{
+  display: flex;
+  background-color:whitesmoke ;
+  align-items: center;
+  justify-content: center;
+  font-family:"Quicksand", sans-serif; 
+  font-size: 50px;
+}
